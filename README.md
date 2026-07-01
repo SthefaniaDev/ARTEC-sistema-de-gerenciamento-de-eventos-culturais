@@ -37,7 +37,8 @@ O jurado pode:
 - Avaliar trabalhos com nota de 0 a 10;
 - Adicionar comentários à avaliação;
 - Avaliar trabalhos de forma anônima, sem visualizar o nome do participante;
-- Evitar avaliação duplicada do mesmo trabalho.
+- Avaliar apenas trabalhos com status `Inscrito`;
+- Registrar uma única avaliação por trabalho.
 
 ### Organizador
 
@@ -72,7 +73,10 @@ O sistema implementa algumas regras importantes:
 - Apenas categorias válidas podem ser utilizadas;
 - Cada participante possui limite de inscrições por categoria;
 - A nota da avaliação deve estar entre 0 e 10;
-- Um jurado não pode avaliar o mesmo trabalho mais de uma vez;
+- Cada trabalho recebe apenas uma avaliação;
+- Após ser avaliado, o trabalho tem seu status alterado de `Inscrito` para `Avaliado`;
+- Trabalhos avaliados deixam de aparecer na lista de trabalhos disponíveis para avaliação;
+- Um jurado não pode avaliar novamente um trabalho já registrado;
 - A avaliação dos trabalhos pelo jurado ocorre de forma anônima, ocultando o nome do participante.
 
 ---
